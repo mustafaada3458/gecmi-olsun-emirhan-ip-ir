@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geçmiş Olsun Emirhan İpşir ❤️</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#f8f9fa,#e9ecef);
+    padding:20px;
+}
+
+.card{
+    max-width:600px;
+    width:100%;
+    background:white;
+    padding:50px 30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.heart{
+    font-size:65px;
+    animation:kalp 1.5s infinite;
+}
+
+h1{
+    margin-top:20px;
+    font-size:38px;
+    color:#222;
+}
+
+.name{
+    margin-top:10px;
+    font-size:25px;
+    color:#c44569;
+    font-weight:bold;
+}
+
+.line{
+    width:70px;
+    height:3px;
+    background:#c44569;
+    margin:25px auto;
+    border-radius:10px;
+}
+
+.message{
+    color:#666;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.wish{
+    margin-top:25px;
+    color:#444;
+    font-weight:bold;
+    line-height:1.7;
+}
+
+button{
+    margin-top:30px;
+    padding:13px 25px;
+    border:0;
+    border-radius:30px;
+    background:#c44569;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#a83255;
+}
+
+#mesaj{
+    display:none;
+    margin-top:25px;
+    color:#c44569;
+    line-height:1.6;
+}
+
+.signature{
+    margin-top:35px;
+    padding-top:20px;
+    border-top:1px solid #eee;
+    color:#999;
+    line-height:1.8;
+}
+
+.signature strong{
+    color:#c44569;
+}
+
+@keyframes kalp{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.15);}
+}
+
+@media(max-width:500px){
+    h1{font-size:30px;}
+    .name{font-size:22px;}
+    .message{font-size:16px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="heart">❤️</div>
+
+    <h1>Geçmiş Olsun</h1>
+
+    <div class="name">Emirhan İpşir</div>
+
+    <div class="line"></div>
+
+    <p class="message">
+        Her şeyden önce sağlığın önemli.
+        Umarım bu zor günleri en kısa zamanda geride bırakır,
+        yeniden güzel günlere ve neşene kavuşursun.
+    </p>
+
+    <p class="wish">
+        Kendine iyi bak, bol bol dinlen. 🌿<br>
+        En kısa zamanda tamamen iyileşmen dileğiyle...
+    </p>
+
+    <button onclick="mesajGoster()">
+        Bir Mesaj Daha ❤️
+    </button>
+
+    <div id="mesaj">
+        Bugün biraz dinlen, yarın daha güçlü kalk.
+        Güzel günler seni bekliyor Emirhan. 🌸
+    </div>
+
+    <div class="signature">
+        <strong>Cabbar tarafından yapılmıştır. ❤️</strong><br>
+        Geçmiş olsun dileklerimizi diliyoruz.
+    </div>
+
+</div>
+
+<script>
+function mesajGoster(){
+    const mesaj=document.getElementById("mesaj");
+
+    if(mesaj.style.display==="block"){
+        mesaj.style.display="none";
+    }else{
+        mesaj.style.display="block";
+    }
+}
+</script>
+
+</body>
+</html>
